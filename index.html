@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Ivy!</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8c8d0; /* Light pink background */
+            color: #333;
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        h1 {
+            color: #3dc6d8; /* Pink color for the heading */
+            font-size: 3em; /* Large size for bigger screens */
+        }
+
+        h2 {
+            color: rgb(243, 88, 88);
+            font-weight: bold;
+        }
+
+        p {
+            color: rgb(173, 132, 167);
+            font-weight: bold;
+        }
+
+        h3 {
+            color: aliceblue;
+        }
+
+        .container {
+            position: relative; 
+            max-width: 800px; /* Limit max width for better readability */
+            margin: auto; /* Center container */
+            padding: 20px; /* Add padding for content */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; /* Rounded corners */
+            overflow: hidden; /* Ensure overlay is contained */
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('1.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            z-index: 0; /* Behind other content */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1; 
+        }
+
+        .container .message,
+        .container h1,
+        .container h2,
+        .container h3,
+        .container .footer {
+            position: relative; 
+            z-index: 2; 
+        }
+
+        .message {
+            margin: 20px 0;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: #e91e63; 
+            font-size: 2em;
+            text-decoration: none;
+        }
+
+        .video-container {
+            position: relative;
+            max-width: 90%; /* Adjust for better responsiveness */
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #000;
+        }
+
+        video {
+            width: 100%; /* Adjust for better responsiveness */
+            border-radius: 10px;
+            display: block;
+            box-shadow: none;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: #fff;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .vy {
+            color: rgb(170, 250, 116);
+        }
+
+        /* Adjustments for mobile and small screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em; /* Adjust heading font size */
+            }
+            h2 {
+                font-size: 1.8em; /* Adjust subheading font size */
+            }
+            .message {
+                font-size: 1em; /* Adjust message font size */
+                line-height: 1.5; /* Slightly tighter line height */
+            }
+            .footer {
+                font-size: 0.9em; /* Adjust footer font size */
+            }
+            .social-icons a {
+                font-size: 1.5em; /* Adjust social icon size */
+            }
+        }
+
+        @media (max-width: 1024px) {
+            /* Adjustments for tablets or Chromebook-size screens */
+            h1 {
+                font-size: 2.8em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            .message {
+                font-size: 1.1em;
+            }
+        }
+
+        /* Portrait mode adjustments */
+        @media (orientation: portrait) {
+            .container {
+                padding: 10px; /* Reduce padding for portrait mode */
+            }
+            .message {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div> <!-- Background image -->
+        <div class="overlay"></div> <!-- Dark overlay for background -->
+        <h1>Happy Birthday, Ivy!</h1>
+        <h2>Ang pinaka gwapa</h2>
+        <h2>sa kong mga Mata!😆</h2>
+        
+        <audio id="backgroundAudio" autoplay loop>
+            <source src="1.mp3" type="audio/mp3">
+            Your browser does not support this feature.
+        </audio>
+
+        <div class="message">
+            <p>On this blessed day, we gather to celebrate tungod kay Valuable kaayo imong kinabuhi, the incredible woman of God Ivy Grace Lagonoy 😅. Your unwavering faith shines brightly in all that you do, hahah dili bitaw.</p>
+            <p>You are a Blessing! Padayon sa imong pagka gwapa hahaha, Padayon nga mahimo kang PANALANGIN sa imong Pamilya, Panalangin sa mga tao nga naka palibot nimo, ug padayon ra pud mi mo palakpak sa imong mga achievements.</p>
+            <p>Daghan kaayo kog ikas turya pero, malipayon rakos imong kinabuhi Ivy I'm so bless nga nakaila ka namo dalaygon kaayo ang Ginoo sa imong kina buhi, as Spiritual ate hehehe.</p>
+            <p>Declation nakos imoha nga makab-ot nimo imong mga pangandoy sa kinabuhi, i enjoy lang gyud ang Plano sa Ginoo sa imoha dako jud kaayog plano ang Ginioo sa imoha, wala ko naa anad ug typing hahaha personal nalang uban!</p>
+            <p>Once again Happy happy Birthday Ivy. (Happy na birthday mo pa😹)</p>
+            <h3>“For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.” — Jeremiah 29:11</h3>
+        </div>
+
+        <div class="video-container">
+            <video id="video" controls>
+                <source src="1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="play-button" id="playButton" aria-label="Play Video">
+                <i class="bx bx-play"></i>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="vy">Happy Birthday my Future Teacher!</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/floramaycastro.daigdigan" target="_blank" aria-label="Facebook">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/yiv.ace/" target="_blank" aria-label="Instagram">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const playButton = document.getElementById("playButton");
+        const video = document.getElementById("video");
+        const backgroundAudio = document.getElementById("backgroundAudio");
+
+        playButton.addEventListener("click", function() {
+            video.play();
+            backgroundAudio.pause();
+            playButton.style.display = "none";
+        });
+
+        video.addEventListener("pause", function() {
+            playButton.style.display = "block";
+        });
+
+        video.addEventListener("ended", function() {
+            backgroundAudio.play(); 
+        });
+    </script>
+</body>
+</html>
